@@ -1,0 +1,55 @@
+{
+  "batchId": "catalog-migration-001",
+  "title": "Reference catalog alignment",
+  "identityRule": "Same edition of the same work. Different editions are different entities.",
+  "records": [
+    {
+      "id": "a",
+      "source": "old",
+      "label": "Orbit field guide",
+      "details": "Third edition, 2024; ISBN 000-000-003."
+    },
+    {
+      "id": "b",
+      "source": "new",
+      "label": "Orbit guide 3e",
+      "details": "2024, third edition; ISBN 000-000-003."
+    },
+    {
+      "id": "c",
+      "source": "archive",
+      "label": "Orbit field guide III",
+      "details": "Third edition, 2024; ISBN 000-000-003."
+    },
+    {
+      "id": "d",
+      "source": "new",
+      "label": "Orbit field guide 2e",
+      "details": "Second edition, 2021; ISBN 000-000-002."
+    },
+    {
+      "id": "e",
+      "source": "archive",
+      "label": "Orbit guide",
+      "details": "Edition and identifier missing."
+    }
+  ],
+  "pairs": [
+    {
+      "left": "a",
+      "right": "b"
+    },
+    {
+      "left": "b",
+      "right": "c"
+    },
+    {
+      "left": "a",
+      "right": "d"
+    },
+    {
+      "left": "a",
+      "right": "e"
+    }
+  ]
+}
